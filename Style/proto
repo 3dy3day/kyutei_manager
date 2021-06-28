@@ -1,0 +1,25 @@
+import sys
+import tkinter as tk
+from tkinter import ttk
+
+root = tk.Tk()
+root.title(u"Taskman")
+root.geometry("400x300")
+
+#ラベル
+Static1 = tk.Label(text=u'test', foreground='#ff0000', background='#ffaacc')
+Static1.place(x=0, y=0)
+
+static2 = tk.Label(text=u'test2', foreground='#ff8060')
+static2.place(x=50, y=50)
+
+#Input
+add_task = tk.Entry(width=50)
+add_task.insert(tk.END,"Inserting String")
+add_task.pack()
+
+value = add_task.get()
+
+value.place(x=100, y=100)
+
+root.mainloop()
